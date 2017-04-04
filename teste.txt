@@ -1,0 +1,6 @@
+Arquivo para testar o envio
+de um arquivo atráves de um socket
+para resolver o projeto 
+de pi2. Gostaria de agradecer a
+todos os professores essa oportunidade.
+Nosso muito obrigado

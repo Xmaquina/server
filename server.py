@@ -5,7 +5,8 @@ simple socket server using threads
  
 import socket
 import sys
- 
+from . import SendFile 
+
 HOST = ''   # Symbolic name, meaning all available interfaces
 PORT = 8888 # Arbitrary non-privileged port
  
@@ -30,6 +31,8 @@ while 1:
     #wait to accept a connection - blocking call
     conn, addr = s.accept()
     print ('Connected with ' + addr[0] + ':' + str(addr[1]))
+    send = SendFile(con)
+    send.send_file("teste.txt")
     conn.send(str.encode("Bem vindo ao servidor para a comunicacao"))
      
 s.close()
